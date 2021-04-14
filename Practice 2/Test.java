@@ -9,24 +9,24 @@ public class Test {
 		Message msg = new Message(str);
 		
 		
-		System.out.println("Исходное сообщение: " + str);
-		System.out.println("Количество слов в сообщении равно " + msg.countWords() + ";");
+		System.out.println("РСЃС…РѕРґРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ: " + str);
+		System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ СЃР»РѕРІ РІ СЃРѕРѕР±С‰РµРЅРёРё СЂР°РІРЅРѕ " + msg.countWords() + ";");
 		System.out.println();
 		
-		System.out.println("Исходное сообщение:     " + str + ".");
-		System.out.println("Перевернутое сообщение: " + msg.reverse() + ";");
+		System.out.println("РСЃС…РѕРґРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ:     " + str + ".");
+		System.out.println("РџРµСЂРµРІРµСЂРЅСѓС‚РѕРµ СЃРѕРѕР±С‰РµРЅРёРµ: " + msg.reverse() + ";");
 		System.out.println();
 		
-		System.out.println("Исходное сообщение: " + str + ".");
-		System.out.println("Количество вхождений символа 'c' в сообщение равно " + msg.count('c') + ";");
+		System.out.println("РСЃС…РѕРґРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ: " + str + ".");
+		System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ РІС…РѕР¶РґРµРЅРёР№ СЃРёРјРІРѕР»Р° 'c' РІ СЃРѕРѕР±С‰РµРЅРёРµ СЂР°РІРЅРѕ " + msg.count('c') + ";");
 		System.out.println();
 		
-		System.out.println("Исходное сообщение: " + str + ".");
-		System.out.println("Серии в сообщении: " + msg.seria());
+		System.out.println("РСЃС…РѕРґРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ: " + str + ".");
+		System.out.println("РЎРµСЂРёРё РІ СЃРѕРѕР±С‰РµРЅРёРё: " + msg.seria());
 		System.out.println();
 		
-		System.out.println("Исходное сообщение: " + str + ".");
-		System.out.println("Номера в сообщении: " + msg.nomer());
+		System.out.println("РСЃС…РѕРґРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ: " + str + ".");
+		System.out.println("РќРѕРјРµСЂР° РІ СЃРѕРѕР±С‰РµРЅРёРё: " + msg.nomer());
 		System.out.println();
 		
 		
