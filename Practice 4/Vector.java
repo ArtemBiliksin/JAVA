@@ -1,7 +1,4 @@
-package Solution2;
-
 public class Vector {
-
     private int dimension;
     private double [] coordinates;
 
@@ -9,7 +6,6 @@ public class Vector {
         dimension = coordinates.length;
         this.coordinates = coordinates;
     }
-
 
     Vector(Vector v, int dim){
         if(dim < v.dimension){

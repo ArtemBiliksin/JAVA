@@ -1,5 +1,3 @@
-package Solution2;
-
 public class PointsLieOnOneSideOfAStraightLineException extends Exception {
     public PointsLieOnOneSideOfAStraightLineException(){
         super("Points lie on one side of a straight line.");

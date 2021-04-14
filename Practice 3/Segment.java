@@ -1,4 +1,3 @@
-
 public class Segment {
 	
 	private Vector3D startPoint;
@@ -17,13 +16,11 @@ public class Segment {
 		return endPoint;
 	}
 	
-	// ????? ???????
 	double len(){
 		Vector3D s = endPoint.sub(startPoint);
 		return s.len();
 	}
-	
-	// ?????????? ?? ????? ?? ???????
+
 	double distanceTo(Vector3D point) {
 		Vector3D A0 = startPoint;
 		Vector3D A1 = endPoint;

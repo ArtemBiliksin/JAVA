@@ -1,5 +1,3 @@
-package Practice5;
-
 public class ObjectQueue<T> {
     // Указатель на первый элемент
     private ObjectBox head = null;

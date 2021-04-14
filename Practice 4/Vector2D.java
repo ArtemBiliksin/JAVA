@@ -1,5 +1,3 @@
-package Solution2;
-
 import java.util.Scanner;
 
 public class Vector2D extends Vector {
@@ -16,17 +14,14 @@ public class Vector2D extends Vector {
         return this.getComponent(0);
     }
 
-
     double getY() {
         return this.getComponent(1);
     }
-
 
     Vector2D prIsVector2D(Vector2D b) {
         Vector vec = b.multiply(this.pr(b) / b.len());
         return new Vector2D(vec.getComponent(0), vec.getComponent(1));
     }
-
 
     boolean pcollin(Vector2D v) {
         double det = this.getX() * v.getY() - this.getY() * v.getX();
@@ -36,7 +31,6 @@ public class Vector2D extends Vector {
             return false;
         }
     }
-
 
     Vector2D decomposition(Vector2D a, Vector2D b) throws VcollinearException {
         if (a.pcollin(b)) {
@@ -57,10 +51,6 @@ public class Vector2D extends Vector {
 
 
     public Vector2D symmetricalPoint(Vector2D p, Vector2D n) {
-        // S is this
-        //pointP.sub(this).getComponent(0);
-        //Vector SPisVector = pointP.sub(this);
-        //Vector2D SPisVector2D = new Vector2D(SPisVector.getComponent(0), SPisVector.getComponent(1));
         Vector2D SP = new Vector2D(p.sub(this));
         Vector2D pr = new Vector2D(SP.prIsVector2D(n).multiply(2));
         Vector2D symmetricalPoint = new Vector2D(this.add(pr));
@@ -69,7 +59,6 @@ public class Vector2D extends Vector {
 
     public static Vector2D SearchX(Vector2D P, Vector2D n, Vector2D A, Vector2D B)
             throws PointsLieOnOneSideOfAStraightLineException, VcollinearException {
-
         Vector2D A1 = A.symmetricalPoint(P, n);
         Vector2D A1B = new Vector2D(B.sub(A1));
         Vector2D PA =  new Vector2D(A.sub(P));
@@ -78,20 +67,13 @@ public class Vector2D extends Vector {
             throw new PointsLieOnOneSideOfAStraightLineException();
         }
         else if(n.scalar(A1B) == 0){
-           // System.out.println(n.scalar(A1B));
-           // System.out.println(n.getX() * A1B.getX() + n.getY() * A1B.getY()) ;
-           // System.out.println(n.getX() + ", " + n.getY());
-          //  System.out.println(A1B.getX() + ", " + A1B.getY());
             throw new VcollinearException();
         }
         else{
             Vector2D AA1 = new Vector2D(A1.sub(A));
             double lenAA1 = AA1.len();
             double lenA1B = A1B.len();
-
             double cosAlpha = Math.abs(AA1.scalar(A1B)) / (lenAA1 * lenA1B);
-           // System.out.println(AA1.scalar(A1B));
-            //System.out.println(cosAlpha);
             double lenXA1 = lenAA1 / (2 * cosAlpha);
             Vector2D X1 = new Vector2D(A1.add(A1B.multiply(lenXA1 / lenA1B)));
             Vector2D X2 = new Vector2D(A1.add(A1B.multiply(- lenXA1 / lenA1B)));

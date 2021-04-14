@@ -1,15 +1,12 @@
-//import static org.junit.Assert.*;
-/*
 import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
+
 
 public class Vector3DTestClass{
 
 	@Test
 	public void scalar() {
 		double epsilon = 0.00000000001;
-
 		Vector3D v1 = new Vector3D(1,2,3);
 		Vector3D v2 = new Vector3D(-1,4, 7);
 		double actual = v1.scalar(v2);
@@ -22,7 +19,6 @@ public class Vector3DTestClass{
 		Vector3D v1 = new Vector3D(1,2,3);
 		double actual = v1.len();
 		assertEquals(Math.sqrt(14), actual, epsilon);
-
 		assertEquals(1.0, new Vector3D(1,0,0).len(), epsilon);
 	}
 
@@ -65,5 +61,3 @@ public class Vector3DTestClass{
 		assertEquals(false, actual);
 	}
 }
-
- */

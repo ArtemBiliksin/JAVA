@@ -1,6 +1,6 @@
-package Solution2;
-
 import java.util.Scanner;
+
+
 public class Vector2DTest {
 
     public static Vector2D stringToVector2D(String str){
@@ -79,7 +79,7 @@ public class Vector2DTest {
 
 
     public static void main(String[] args){
-       // task1();
+       //task1();
        //task2();
        //task3();
     }

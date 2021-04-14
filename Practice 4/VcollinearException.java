@@ -1,5 +1,3 @@
-package Solution2;
-
 public class VcollinearException extends Exception {
     public VcollinearException(){
         super("Vectors are collinear");

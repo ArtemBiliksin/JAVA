@@ -1,6 +1,5 @@
-package Practice5;
-
 import java.io.*;
+
 
 public class ObjectQueueTest {
     public static void main(String[] arg) {

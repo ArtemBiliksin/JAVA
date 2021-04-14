@@ -9,7 +9,6 @@ public class SegmentTest {
 		double y = Double.parseDouble(strArray[1]);
 		double z = Double.parseDouble(strArray[2]);
 		return new Vector3D(x,y,z);
-
 	}
 
 	public static void main(String[] args) {
