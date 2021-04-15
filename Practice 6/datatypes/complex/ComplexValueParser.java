@@ -19,8 +19,7 @@ public class ComplexValueParser implements AbstractValueParser {
         }
     }
 
-    public String getDatatypeName() {
-        //return "Комплексные числа";
+    public String getDatatypeName() {        
         return "complex number";
     }
 

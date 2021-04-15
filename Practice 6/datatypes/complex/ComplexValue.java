@@ -47,9 +47,4 @@ public class ComplexValue extends AbstractValue {
     public String toString() {
         return String.format("%1$.8f+%2$.8fi", this.real, this.imaginary);
     }
-
-    //public boolean equals(AbstractValue operand){
-    //    return this.real == ((ComplexValue) operand).real &&
-    //            this.imaginary == ((ComplexValue) operand).imaginary;
-    //}
 }
